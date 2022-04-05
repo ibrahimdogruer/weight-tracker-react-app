@@ -37,15 +37,15 @@ const Login = () => {
                     <form className="my-4" onSubmit={login}>
                         <div className="form-group mt-4">
                             <label>Email</label>
-                            <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email"
+                            <input type="email" className="form-control shadow" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email"
                                 onChange={(e) => setEmail(e.target.value)} value={email} />
                         </div>
                         <div className="form-group mt-4">
                             <label>Password</label>
-                            <input type="password" className="form-control" id="inputPassword" placeholder="Password"
+                            <input type="password" className="form-control shadow" id="inputPassword" placeholder="Password"
                                 onChange={(e) => setPassword(e.target.value)} value={password} />
                         </div>
-                        <button type="submit" className="btn btn-primary mt-4">Login</button>
+                        <button type="submit" className="btn btn-primary shadow mt-4">Login</button>
                         <p className="mt-3">Create an account <Link to={{ pathname: '/signup', }}>Signup</Link></p>
                     </form>
                 </div>

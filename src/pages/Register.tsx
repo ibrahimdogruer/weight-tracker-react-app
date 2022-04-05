@@ -50,20 +50,20 @@ const Register = () => {
                     <form className="my-4" onSubmit={register}>
                         <div className="form-group mt-4">
                             <label>Email</label>
-                            <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email"
+                            <input type="email" className="form-control shadow" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email"
                                 onChange={(e) => setEmail(e.target.value)} value={email} />
                         </div>
                         <div className="form-group mt-4">
                             <label>Username</label>
-                            <input type="text" className="form-control" id="inputUsername" aria-describedby="usernameHelp" placeholder="Enter Username"
+                            <input type="text" className="form-control shadow" id="inputUsername" aria-describedby="usernameHelp" placeholder="Enter Username"
                                 onChange={(e) => setUsername(e.target.value)} value={username} />
                         </div>
                         <div className="form-group mt-4">
                             <label >Password</label>
-                            <input type="password" className="form-control" id="inputPassword" placeholder="Password"
+                            <input type="password" className="form-control shadow" id="inputPassword" placeholder="Password"
                                 onChange={(e) => setPassword(e.target.value)} value={password} />
                         </div>
-                        <button type="submit" className="btn btn-primary mt-4">Signup</button>
+                        <button type="submit" className="btn btn-primary shadow mt-4">Signup</button>
                         <p className="mt-3">Already have an account <Link to={{ pathname: '/login', }}>Login</Link></p>
                     </form>
                 </div>
