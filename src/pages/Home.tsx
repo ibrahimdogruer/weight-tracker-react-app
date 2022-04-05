@@ -53,7 +53,7 @@ const Home = () => {
             }).then(() => {
                 console.log('Weight added');
                 setWeight('');
-                toast.success('Weight added successfully');
+                // toast.success('Weight added successfully');
             }).catch(error => {
                 console.log(error.message);
                 toast.error(error.message);
@@ -129,7 +129,7 @@ const Home = () => {
                     {!loading && weights?.length <= 0 && <h6> No Data</h6>}
 
                     {!loading && weights?.length > 0 && weights?.map(item => (
-                        <WeightCard item={item} deleteWeight={deleteWeight} editWeight={editWeight} />
+                        <WeightCard key={item.id} item={item} deleteWeight={deleteWeight} editWeight={editWeight} />
                     ))}
                 </div>
             </div>
